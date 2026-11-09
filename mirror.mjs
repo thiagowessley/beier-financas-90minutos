@@ -55,7 +55,7 @@ for (const caminho of pedidos) {
 }
 
 // arquivos soltos na raiz que o HTML usa
-for (const solto of ['/favicon.ico', '/favicon.png', '/compartilhamento-beier.jpg', '/robot.txt', '/robots.txt']) {
+for (const solto of ['/favicon.ico', '/favicon.png', '/compartilhamento-beier.jpg', '/robots.txt']) {
   const dados = await baixar(solto);
   if (dados) salvar(solto, dados);
 }
