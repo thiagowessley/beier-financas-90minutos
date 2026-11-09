@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 600px; height: 600px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(234,183,87,.16) 0%, rgba(234,183,87,0) 62%),
+      #100F0E;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #F2EEE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  .moldura {
+    position: absolute;
+    inset: 26px;
+    border: 1px solid rgba(234,183,87,.22);
+    pointer-events: none;
+  }
+  .marca {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    color: #9A9284;
+    margin-bottom: 26px;
+  }
+  .numero {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+    font-size: 208px;
+    line-height: .82;
+    letter-spacing: -.045em;
+    background: linear-gradient(180deg, #F6CE7C 0%, #EAB757 52%, #C99536 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .minutos {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    letter-spacing: .30em;
+    text-indent: .30em;
+    color: #F2EEE6;
+    margin-top: 12px;
+  }
+  .traco {
+    width: 74px;
+    height: 1px;
+    background: rgba(234,183,87,.55);
+    margin: 30px 0 24px;
+  }
+  .chamada {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.32;
+    max-width: 410px;
+    color: #F2EEE6;
+  }
+  .chamada strong { font-weight: 700; color: #EAB757; }
+  .rodape {
+    position: absolute;
+    bottom: 52px;
+    left: 0; right: 0;
+    font-size: 13px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #8A8578;
+  }
+</style>
+</head>
+<body>
+  <div class="moldura"></div>
+  <div class="marca">Beier Educação</div>
+  <div class="numero">90</div>
+  <div class="minutos">MINUTOS</div>
+  <div class="traco"></div>
+  <div class="chamada">Domine as finanças<br>da sua empresa para <strong>lucrar mais</strong></div>
+  <div class="rodape">6 aulas &nbsp;·&nbsp; planilhas prontas</div>
+</body>
+</html>
